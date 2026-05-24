@@ -353,7 +353,7 @@ Use these credentials to explore the app:
 
 Built with ❤️ by **Shikha Sahu**
 
-For any queries: hr@isaii.in
+For any queries: sahushikhauptu@gmail.com
 
 ---
 
