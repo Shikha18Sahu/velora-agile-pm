@@ -69,7 +69,7 @@ Velora is a modernized, visually stunning MERN Stack project management applicat
 
 ---
 
-<<<<<<< HEAD
+
 ## Database Schemas
 
 ### User
