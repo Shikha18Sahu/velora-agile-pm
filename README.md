@@ -319,4 +319,4 @@ For any queries: sahushikhauptu@gmail.com
 ---
 
 *Velora — Agile Project Management*
->>>>>>> 3013c7d190fb2c993155b21df2f7c76814e8a7c1
+
