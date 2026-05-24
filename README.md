@@ -69,6 +69,7 @@ Velora is a modernized, visually stunning MERN Stack project management applicat
 
 ---
 
+<<<<<<< HEAD
 ## Database Schemas
 
 ### User
@@ -147,3 +148,175 @@ npm run dev
 
 *Your application will run on: `http://localhost:3000`.*
 *All backend request paths `/api` are automatically proxied from Vite to `http://localhost:5000` to avoid local cross-origin blocks.*
+=======
+## ⚙️ Getting Started
+
+### Prerequisites
+
+Make sure you have these installed:
+
+| Tool | Version | Download |
+|------|---------|----------|
+| Node.js | 18.x or higher | [nodejs.org](https://nodejs.org) |
+| npm | 9.x or higher | Comes with Node.js |
+| Git | Latest | [git-scm.com](https://git-scm.com) |
+| MongoDB Atlas Account | Free | [mongodb.com/atlas](https://mongodb.com/atlas) |
+
+### Installation
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/your-username/velora-agile-pm.git
+cd velora-agile-pm
+```
+
+**2. Install server dependencies**
+```bash
+cd server
+npm install
+```
+
+**3. Install client dependencies**
+```bash
+cd ../client
+npm install
+```
+
+---
+
+## 🔑 Environment Variables
+
+### Server — create `server/.env`
+
+```env
+PORT=5000
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/velora?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=your_super_secret_jwt_key_here
+```
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `PORT` | Server port number | `5000` |
+| `MONGO_URI` | MongoDB Atlas connection string | `mongodb+srv://...` |
+| `JWT_SECRET` | Secret key for JWT tokens | `mysecretkey123` |
+
+### Client — create `client/.env`
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `VITE_API_URL` | Backend API base URL | `http://localhost:5000/api` |
+
+---
+
+## ▶️ Running the App
+
+### Step 1 — Seed the Database
+```bash
+cd server
+npm run seed
+```
+This creates sample users, projects, and tasks.
+
+### Step 2 — Start the Backend Server
+```bash
+cd server
+npm run start
+```
+Server runs on: `http://localhost:5000`
+
+### Step 3 — Start the Frontend
+```bash
+cd client
+npm run dev
+```
+App runs on: `http://localhost:3000`
+
+---
+
+## 👤 Test Accounts
+
+Use these credentials to explore the app:
+
+| Role | Email | Password | Access |
+|------|-------|----------|--------|
+| **Admin** | `admin@example.com` | `adminpassword123` | Full admin access |
+| **Member** | `jane@example.com` | `userpassword123` | Standard user access |
+
+---
+
+## 📡 API Endpoints
+
+### Auth Routes
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/auth/register` | Register new user |
+| POST | `/api/auth/login` | Login user |
+| GET | `/api/auth/me` | Get current user |
+
+### Project Routes
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/projects` | Get all projects |
+| POST | `/api/projects` | Create new project |
+| GET | `/api/projects/:id` | Get single project |
+| DELETE | `/api/projects/:id` | Delete project |
+| POST | `/api/projects/:id/invite` | Invite member |
+
+### Task Routes
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/tasks/:projectId` | Get project tasks |
+| POST | `/api/tasks/:projectId` | Create task |
+| PUT | `/api/tasks/:id` | Update task |
+| DELETE | `/api/tasks/:id` | Delete task |
+| POST | `/api/tasks/:id/comments` | Add comment |
+| POST | `/api/tasks/:id/links` | Link issues |
+
+### Sprint Routes
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/sprints/:projectId` | Get project sprints |
+| POST | `/api/sprints/:projectId` | Create sprint |
+| PUT | `/api/sprints/:id` | Update sprint |
+| DELETE | `/api/sprints/:id` | Delete sprint |
+
+### Other Routes
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/dashboard` | Get dashboard stats |
+| GET | `/api/notifications` | Get notifications |
+| PUT | `/api/notifications/:id/read` | Mark as read |
+
+---
+
+## 🎯 Key Highlights
+
+- ✅ Built completely from scratch using MERN Stack
+- ✅ JWT based secure authentication
+- ✅ Role based access control (Admin, Member, Viewer)
+- ✅ Real-time notifications with auto polling
+- ✅ Drag and drop Kanban board
+- ✅ Sprint management with velocity tracking
+- ✅ Burndown chart for active sprints
+- ✅ Issue linking and @mention in comments
+- ✅ Auto generated issue IDs (ACME-1, ACME-2)
+- ✅ Fully responsive UI with Tailwind CSS
+- ✅ Clean folder structure with reusable components
+- ✅ Meaningful git commit history
+
+---
+
+## 👩‍💻 Developer
+
+Built with ❤️ by **Shikha Sahu**
+
+For any queries: sahushikhauptu@gmail.com
+
+---
+
+*Velora — Agile Project Management*
+>>>>>>> 3013c7d190fb2c993155b21df2f7c76814e8a7c1
